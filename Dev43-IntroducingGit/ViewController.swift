@@ -30,6 +30,11 @@ class ViewController: UIViewController {
         foodCategoryLbl.heightAnchor.constraint(equalToConstant: 20).isActive = true
         stackView.addArrangedSubview(foodCategoryLbl)
         
+        let categoryContainerView = UIView()
+        categoryContainerView.backgroundColor = .red
+        categoryContainerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        stackView.addArrangedSubview(categoryContainerView)
+        
         let popularLbl = UILabel()
         popularLbl.text = "Popular Dished"
         popularLbl.heightAnchor.constraint(equalToConstant: 20).isActive = true
