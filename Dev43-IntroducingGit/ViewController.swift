@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(foodCategoryLbl)
         
         let categoryContainerView = UIView()
-        categoryContainerView.backgroundColor = .red
+        categoryContainerView.backgroundColor = .orange
         categoryContainerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         stackView.addArrangedSubview(categoryContainerView)
         
