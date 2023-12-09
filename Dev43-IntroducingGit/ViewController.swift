@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20)
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
         
         let foodCategoryLbl = UILabel()
@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         popularLbl.text = "Popular Dished"
         popularLbl.heightAnchor.constraint(equalToConstant: 20).isActive = true
         stackView.addArrangedSubview(popularLbl)
+        
+        let popularContainerView = UIView()
+        popularContainerView.backgroundColor = .green
+        popularContainerView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        stackView.addArrangedSubview(popularContainerView)
 
     }
 
